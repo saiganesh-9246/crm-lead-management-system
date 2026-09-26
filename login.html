@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SG LEADFLOW - Secure Login and Registration">
+    <title>SG LEADFLOW | Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-shell">
+
+        <div class="login-brand">
+            <div class="brand-mark">SG</div>
+            <div>
+                <h1>SG LEADFLOW</h1>
+                <p>Lead Management & Sales Pipeline</p>
+            </div>
+        </div>
+
+        <div class="login-card">
+
+            <div class="login-card-head">
+                <span class="eyebrow" id="formEyebrow">AUTHENTICATION</span>
+                <h2 id="formTitle">Welcome Back</h2>
+                <p id="formSubtitle">Sign in to manage your sales pipeline and leads</p>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="stack-form">
+
+                <div class="field">
+                    <label for="loginEmail">Email Address</label>
+                    <input class="input" type="email" id="loginEmail" placeholder="admin@sgleadflow.local" required autocomplete="username">
+                </div>
+
+                <div class="field">
+                    <label for="loginPassword">Password</label>
+                    <input class="input" type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password">
+                </div>
+
+                <div id="loginMessage" class="hidden"></div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="loginSubmitBtn">
+                    Sign In to Dashboard
+                </button>
+
+                <div class="demo-login">
+                    <strong style="color:var(--text);font-size:11px;">⚡ Quick Demo Login (Click to fill):</strong>
+                    <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;">
+                        <button type="button" class="btn btn-small" id="fillAdminBtn" style="flex:1;">
+                            🔑 Admin Demo
+                        </button>
+                        <button type="button" class="btn btn-small" id="fillSalesBtn" style="flex:1;">
+                            💼 Sai Ganesh (Sales)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-footer">
+                    Don't have an account?
+                    <button type="button" id="showRegister" class="btn-link" style="background:none;border:none;color:var(--primary);font-weight:700;cursor:pointer;padding:0 4px;">
+                        Create an account
+                    </button>
+                </div>
+
+            </form>
+
+
+            <!-- REGISTRATION FORM -->
+            <form id="registerForm" class="stack-form hidden">
+
+                <div class="field">
+                    <label for="registerName">Full Name</label>
+                    <input class="input" type="text" id="registerName" placeholder="e.g. Sai Ganesh" required autocomplete="name">
+                </div>
+
+                <div class="field">
+                    <label for="registerEmail">Email Address</label>
+                    <input class="input" type="email" id="registerEmail" placeholder="e.g. sai@sgleadflow.local" required autocomplete="email">
+                </div>
+
+                <div class="form-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div class="field">
+                        <label for="registerPassword">Password</label>
+                        <input class="input" type="password" id="registerPassword" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+
+                    <div class="field">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input class="input" type="password" id="confirmPassword" placeholder="••••••••" required autocomplete="new-password">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="registerRole">Role</label>
+                    <select class="select" id="registerRole" required>
+                        <option value="Sales Executive">Sales Executive</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="Sales Manager">Sales Manager</option>
+                    </select>
+                </div>
+
+                <div id="registerMessage" class="hidden"></div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="registerSubmitBtn">
+                    Create Account & Sign In
+                </button>
+
+                <div class="login-footer">
+                    Already have an account?
+                    <button type="button" id="showLogin" class="btn-link" style="background:none;border:none;color:var(--primary);font-weight:700;cursor:pointer;padding:0 4px;">
+                        Sign In
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

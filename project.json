@@ -1,0 +1,11 @@
+{
+  "project": "SG LEADFLOW - Lead Management System",
+  "task_id": "WD-CRM-002",
+  "stack": [
+    "HTML5",
+    "CSS3",
+    "JavaScript"
+  ],
+  "storage": "LocalStorage",
+  "entry": "login.html"
+}
