@@ -1,6 +1,6 @@
 # SG LEADFLOW (CRM)
 
-A responsive frontend-only **Lead Management System (CRM)** built for the **Free Web Development Internship Online** task.
+A responsive frontend-only **Lead Management System (CRM)** built for the **Web Development Internship Online** task.
 
 **Task ID:** `WD-CRM-002`  
 **Domain:** CRM - Lead Management / Sales Pipeline  
